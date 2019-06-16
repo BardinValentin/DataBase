@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.3
+- https://www.phpmyadmin.net
+-
+- Хост: localhost:3306
+- Время создания: Июн 16 2019 г., 07:08
+- Версия сервера: 5.7.24-log
+- Версия PHP: 7.2.10
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="db2" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="datepeopleofnumber">
+                CREATE TABLE `datepeopleofnumber` (
+                  `PeopleID` int(11) DEFAULT NULL,
+                  `PhoneID` int(11) NOT NULL DEFAULT '0',
+                  `Phone` tinytext,
+                  `name` varchar(50) DEFAULT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'db2'
+    -->
+    <database name="db2">
+        <!-- Таблица datepeopleofnumber -->
+        <table name="datepeopleofnumber">
+            <column name="PeopleID">1</column>
+            <column name="PhoneID">1</column>
+            <column name="Phone">89515449425</column>
+            <column name="name">Петя</column>
+        </table>
+        <table name="datepeopleofnumber">
+            <column name="PeopleID">1</column>
+            <column name="PhoneID">2</column>
+            <column name="Phone">89998887766</column>
+            <column name="name">Петя</column>
+        </table>
+        <table name="datepeopleofnumber">
+            <column name="PeopleID">2</column>
+            <column name="PhoneID">3</column>
+            <column name="Phone">89991113322</column>
+            <column name="name">Саша</column>
+        </table>
+    </database>
+</pma_xml_export>
